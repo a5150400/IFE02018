@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+     .dq{
+       width: 500px; height: 100px;
+       transition: 2s;border:1px solid;
+       text-align: center;
+        margin: 0 auto;
+       }
+      .dq button{
+        background-color: #fff;
+        border: 1px solid;
+        border-radius: 3px;
+        box-shadow: 1px 1px 5px;;
+
+      }
+      .dq p:first-child{
+        width: 80px;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-weight: bold; font-family: "微软雅黑";
+        }
+      .dq p:nth-child(2){
+          width: 0px;
+          height: 3px;
+          background: red;
+          margin: 0 auto;
+          margin-bottom: 10px;
+          transition: 0.3s;
+
+      }
+      .dq p.active{width: 80px;}
+
+  </style>
+  <body>
+      <div class="dq">
+        <p class="">前端学院</p>
+        <p class="" id="p1"></p>
+        <button id="btn" type="button" name="button">点击切换</button>
+      </div>
+      <script type="text/javascript">
+            var btn1 = document.getElementById('btn');
+            var p1 = document.getElementById('p1');
+            btn1.onclick = function() {
+                  p1.className = "active";
+                  if (p1.className==" ") {
+                    p1.className = "active";
+                  }else{
+                    alert('1')
+                    p1.className = " ";
+                  }
+            }
+      </script>
+  </body>
+</html>
