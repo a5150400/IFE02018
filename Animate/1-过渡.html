@@ -30,10 +30,13 @@
           background: red;
           margin: 0 auto;
           margin-bottom: 10px;
-          transition: 0.3s;
+          transition: 0.9s;
 
       }
-      .dq p.active{width: 80px;}
+      .dq p.active{
+        width: 80px;
+        background-color: green;
+      }
 
   </style>
   <body>
@@ -46,12 +49,12 @@
             var btn1 = document.getElementById('btn');
             var p1 = document.getElementById('p1');
             btn1.onclick = function() {
-                  p1.className = "active";
-                  if (p1.className==" ") {
-                    p1.className = "active";
-                  }else{
-                    alert('1')
+                  if (p1.className=="active") {
                     p1.className = " ";
+
+                  }else{
+                    p1.className = "active";
+
                   }
             }
       </script>
