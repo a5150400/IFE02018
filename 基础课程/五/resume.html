@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-<link rel="stylesheet" href="style_4.css">
+<link id="link" rel="stylesheet" href="style_3.css">
   </head>
   <body>
       <div class="wrap">
@@ -68,6 +68,19 @@
 
     </div>
 </div>
+  <script type="text/javascript">
 
+        setInterval(function() {
+            var link = document.getElementById('link');
+            var link1 = link.getAttribute("href").charAt(6);
+                if (link1 == 3) {
+                    link.setAttribute("href",'style_4.css')
+                }else{
+                    link.setAttribute("href",'style_3.css')
+
+                }
+        },2000)
+
+  </script>
   </body>
 </html>
