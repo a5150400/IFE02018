@@ -1,0 +1,37 @@
+body{
+  font-family: '微软雅黑';
+  padding:0;
+  margin: 0;
+
+}
+  .me{overflow: hidden;}
+  .me p{
+    float: left;
+    margin-right: 20px;
+  }
+  p{
+    font-weight: 600
+  }
+  .block{
+    margin-bottom: 30px;
+  }
+  .container{
+      overflow: hidden;
+      padding-left: 20px;
+      }
+  .headed{
+      float: left;
+      width: 20%;
+      height:100%;
+      background-color: #65A5FA;
+      margin: 0;
+      text-align: center;
+      padding-top: 50px;
+      color: #fff;
+
+  }
+  .wrap{
+      overflow: hidden;
+      height: 950px;
+
+  }
